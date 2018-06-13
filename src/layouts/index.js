@@ -12,6 +12,7 @@ const Layout = ({ children, data }) => (
       meta={[
         { name: 'description', content: data.site.siteMetadata.description },
         { name: 'keywords', content: data.site.siteMetadata.keywords },
+        { name: 'google-site-verification" />', content: "Fi43k7hZ92oMQC62G4rTcCamzsU52rJkcInJEZUJ_xU" },
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
