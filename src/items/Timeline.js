@@ -1,19 +1,38 @@
 import React, { Component } from "react";
 import { Tweet } from "react-twitter-widgets";
-const TWEETS = [
-  '1005577738332172289',
-  '1005695924318842880',
-  '1005788654386606080'
-];
+
+const TOPICS = {
+  TESLA: 'tesla',
+  ROADSTER: 'roadster'
+};
+
+const content = {
+  1: {
+    tweetId: '1006597562156003328',
+    title: 'Tesla Re-organization',
+    topic: TOPICS.TESLA
+  },
+  2: {
+    tweetId: '1005577738332172289',
+    title: 'Tesla Roadster will include ~10 small rocket thrusters',
+    topic: TOPICS.ROADSTER
+  },
+  3: {
+    tweetId: '1005788654386606080',
+    title: 'Roadster will be absolutely out of this world',
+    topic: TOPICS.ROADSTER
+  }
+}
 
 class Timeline extends Component {
   render() {
     return (
       <div className="app">
-        {TWEETS.map( (id)=> <Tweet
-          key={id}
-          tweetId={id}
-        />)}
+        { Object.entries(content).map( ([key, {title, tweetId}])=>
+          <div key={key} className='card card--center'>
+            <h2 className='card__header'>{title}</h2>
+            <Tweet tweetId={tweetId}/>
+        </div>)}
 
       </div>
     );

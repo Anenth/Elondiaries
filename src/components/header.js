@@ -9,10 +9,11 @@ const Header = ({ siteTitle }) => (
         maxWidth: 960,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 className='header--style-primary'>
         <Link
           to="/"
           style={{
+            color: '#000',
             textDecoration: 'none',
           }}
         >
