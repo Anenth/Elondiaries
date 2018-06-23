@@ -13,7 +13,14 @@ module.exports = {
         head: false,
       },
     },
-
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `montserrat alternates\:400,600`
+        ]
+      }
+    }
   ],
 }
 //
