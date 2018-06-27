@@ -1,7 +1,7 @@
 
 const TOPICS = {
   TESLA: 'tesla',
-  MODEL_Y: model_y,
+  MODEL_Y: 'model_y',
   ROADSTER: 'roadster',
   BORING_COMPANY: 'boring_company'
 };
