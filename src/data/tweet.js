@@ -10,7 +10,7 @@ export default {
   1: {
     tweetId: '1011678031801249793',
     title: 'Tesla Modell Y - The pickup truck',
-    topic: [OPICS.TESLA, TOPICS.MODEL_Y]
+    topic: [TOPICS.TESLA, TOPICS.MODEL_Y]
   },
   2: {
     tweetId: '1006597562156003328',
