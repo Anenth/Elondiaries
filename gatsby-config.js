@@ -6,6 +6,7 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-netlify',
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -14,15 +15,21 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-plugin-emotion`,
       options: {
-        fonts: [
-          `montserrat alternates\:400,600`
-        ]
+        // Accepts all options defined by `babel-plugin-emotion` plugin.
       }
     }
   ],
 }
+// {
+//   resolve: `gatsby-plugin-google-fonts`,
+//     options: {
+//   fonts: [
+//     `montserrat alternates\:400,600`
+//   ]
+// }
+// }
 //
 // {
 //   resolve: `gatsby-plugin-favicon`,

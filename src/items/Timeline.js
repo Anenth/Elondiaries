@@ -7,9 +7,11 @@ class Timeline extends Component {
     return (
       <div className="app">
         { Object.entries(tweet).map( ([key, {title, tweetId}])=>
-          <div key={key} className='card card--center'>
-            <h2 className='card__header'>{title}</h2>
-            <Tweet tweetId={tweetId}/>
+          <div key={key} className='card'>
+            <div className="card__content card__content--center">
+              <h2 className='card__header'>{title}</h2>
+              <Tweet tweetId={tweetId}/>
+            </div>
         </div>)}
 
       </div>

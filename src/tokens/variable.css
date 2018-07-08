@@ -1,0 +1,10 @@
+:root {
+    --font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+
+    --font-w-bold:      400;
+    --font-w-medium:    300;
+    --font-w-light:     100;
+
+    --font-w-header: var(--font-w-medium);
+}
+

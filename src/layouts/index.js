@@ -15,13 +15,8 @@ const Layout = ({ children, data }) => (
         { name: 'google-site-verification', content: "Fi43k7hZ92oMQC62G4rTcCamzsU52rJkcInJEZUJ_xU" },
       ]}
     />
-    <Header siteTitle={data.site.siteMetadata.title} />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960
-      }}
-    >
+    {/*<Header siteTitle={data.site.siteMetadata.title} />*/}
+    <div>
       {children()}
     </div>
   </div>
