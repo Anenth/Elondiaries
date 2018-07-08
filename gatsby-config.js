@@ -6,19 +6,12 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-netlify',
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-60526867-3",
         head: false,
       },
-    },
-    {
-      resolve: `gatsby-plugin-emotion`,
-      options: {
-        // Accepts all options defined by `babel-plugin-emotion` plugin.
-      }
     }
   ],
 }

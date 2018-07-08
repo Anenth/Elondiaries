@@ -1,6 +1,6 @@
 import React from 'react'
 // import Link from 'gatsby-link'
-import Timeline from '../items/Timeline'
+import Timeline from '../stuff/Timeline'
 
 const IndexPage = () => (
   <div>
