@@ -12,7 +12,7 @@ collections:
     fields:
       - { name: "id", label: "Id", widget: "hidden", default: "1"}
       - { name: title, label: Title }
-      - { name: "tags", label: "Tags",  widget: "list",
+      - { name: "tags", label: "Tags",  widget: "select",
         options: ["Tesla", "Model S", "Model 3", "Model X", "Model Y", "Model Semi", "Roadster", "China", "India",
         "Boring company"]}
       - { name: date, label: Date, widget: "datetime"}
