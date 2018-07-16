@@ -12,17 +12,9 @@ collections:
     fields:
       - { name: "id", label: "Id", widget: "hidden", default: "1"}
       - { name: title, label: Title }
-      - { name: "tags", label: "Tags",  widget: "list", fields: [
-          {label: Tesla, name: tesla, widget: string},
-          {label: Model S, name: model_s, widget: string},
-          {label: Model 3, name: model_3, widget: string},
-          {label: Model X, name: model_x, widget: string},
-          {label: Model Y, name: model_y, widget: string},
-          {label: Model Semi, name: model_semi, widget: string},
-          {label: Roadster, name: roadster, widget: string},
-
-          {label: Boring comany, name: boring_company, widget: string}
-          ]}
+      - { name: "tags", label: "Tags",  widget: "list",
+        options: ["Tesla", "Model S", "Model 3", "Model X", "Model Y", "Model Semi", "Roadster", "China", "India",
+        "Boring company"]}
       - { name: date, label: Date, widget: "datetime"}
       - { name: tweet, label: tweetId }
       - { name: body, label: Body, widget: markdown }
